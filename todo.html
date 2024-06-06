@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Application</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+
+<body>
+    <section class="top">
+        <h1>todos</h1>
+        <div class="new-todo-container">
+            <button class="check-all" onclick="checkAll()">▼</button>
+            <input class="new-todo" placeholder="What needs to be done?">
+        </div>
+        <div class="box">
+            <ul class="todoList"></ul>
+            <div class="down">
+                <div class="count"></div>
+                <ul class="options">
+                    <li><a href="#/"><button id="all" onclick="showAll()" hidden>All</button></a></li>
+                    <li><a href="#/active"><button id="active" onclick="showActive()" hidden>Active</button></a></li>
+                    <li><a href="#/completed"><button id="completed" onclick="showCompleted()"
+                                hidden>Completed</button></a></li>
+                </ul>
+                <button class="clear" id="clr" onclick="clearCompleted()" hidden>Clear completed</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="last">
+        <p>Double-click to edit a todo</p>
+        <p>Created by the TodoMVC Team</p>
+        <p>Part of TodoMVC</p>
+    </footer>
+<script src="todo.js"></script>
+</body>
+
+</html>

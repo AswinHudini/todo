@@ -1,0 +1,125 @@
+body {
+    background-color: bisque;
+    margin: 2% 20%;
+}
+
+h1 {
+    color: brown;
+    font-size: 50pt;
+    font-weight: lighter;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+}
+
+.new-todo-container {
+    display: grid;
+    grid-template-columns: 0.5fr 4.5fr;
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.new-todo {
+    width: 100%;
+    padding: 3%;
+    box-sizing: border-box;
+    border: none;
+}
+
+.new-todo:focus {
+    outline: none;
+    border: 1px solid red;
+}
+
+.todoList {
+    display: inline;
+    list-style: none;
+}
+
+.options li {
+    display: inline;
+    gap: 20%;
+}
+
+.down {
+    display: flex;
+    gap: 20%;
+}
+
+.box {
+    position: relative;
+    background-color: white;
+}
+
+.todoList li {
+    padding: 10px;
+    border-bottom: 1px solid rgb(101, 101, 101);
+}
+
+.todoList li .deleteTask {
+    position: absolute;
+    right: 10px;
+}
+
+button {
+    background-color: white;
+    border: none;
+}
+
+.options button:hover {
+    border: 1px solid red;
+}
+
+.options button.selected {
+    border: 1px solid red;
+}
+
+/* button:active{
+border-color: red;
+} */
+.count {
+    padding: 20px;
+}
+
+.last {
+    padding-top: 20%;
+    bottom: 0%;
+    left: 40%;
+    color: #4d4d4d;
+    font-size: 15px;
+    text-align: center;
+}
+
+.check-all {
+    border-right: white;
+}
+
+.check-all:hover {
+    border: 1px solid red;
+    border-right: white;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 5%;
+    }
+    h1 {
+        font-size: 30pt;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: 10%;
+    }
+    h1 {
+        font-size: 60pt;
+    }
+}
+@media screen and (max-width: 480px) {
+    body {
+        margin: 2%;
+    }
+    h1 {
+        font-size: 20pt;
+    }
+}
